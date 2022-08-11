@@ -39,16 +39,16 @@ public class Main_Financial_PO {
 			int num = 30;
 			for (int x =1; x<num;x++)
 			{
-				driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+				driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(5));
 			WebElement link = driver.findElement(By.xpath("//tbody/tr[1]/td[1]/div["+x+"]/a[1]"));
 			Actions action = new Actions(driver);
 			action.moveToElement(link).build().perform();
 			JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("window.scrollBy(0,50)", link);
-			action.sendKeys(Keys.F5);
+			
 			//Thread.sleep(4000);
 			link.getText();
-			action.sendKeys(Keys.F5);
+			
 			String [] array= new String [] 
 					{"Mortgage Calculator", 
 					"Amortization Calculator",
@@ -88,7 +88,7 @@ public class Main_Financial_PO {
 			sa.assertEquals(list2.get(x-1), link.getText());
 			System.out.println(list2.get(x-1) + " is Asserted.");
 			if (link != null) {
-				driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+				driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(5));
 				link.click();
 			}else if (link == null) {
 				driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
@@ -153,7 +153,7 @@ public class Main_Financial_PO {
 			//Thread.sleep(3000);
 			driver.navigate().back();
 			//Thread.sleep(2000);
-			action.sendKeys(Keys.F5);
+			
 			
             }
 			
