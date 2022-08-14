@@ -15,7 +15,7 @@ WebDriver driver;
 	public void Setup()
 	{
 		driver = setproperty();
-		driver.get("https://www.calculator.net/financial-calculator.html");
+		driver.get("https://www.freeimages.com");
 	}
 	@Test
 	public void Test_location() throws InterruptedException 
