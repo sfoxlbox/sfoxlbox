@@ -36,7 +36,7 @@ public class Main_Financial_PO {
 			List<WebElement> elements = driver.findElements(By.xpath("//tbody/tr[1]/td[1]/div"));
 			System.out.println("Number of elements:" +elements.size());
 			SoftAssert sa = new SoftAssert();
-			int num = 30;
+			int num = elements.size()+1;
 			for (int x =1; x<num;x++)
 			{
 				driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(5));
