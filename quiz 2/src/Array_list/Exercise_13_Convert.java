@@ -22,7 +22,9 @@ public class Exercise_13_Convert {
 	girlsName.toArray(girlsName_array);
 	
 	System.out.println("converted to Array : ");
-	for(String element: girlsName_array) { System.out.println(element);
+	for(String element: girlsName_array) 
+	{
+		System.out.println(element);
 	
 	}
 	
