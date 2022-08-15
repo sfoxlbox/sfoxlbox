@@ -39,7 +39,8 @@ import org.openqa.selenium.support.PageFactory;
 	   h_set.toArray(array);
 	   for(int x = 0; x< h_set.size(); x++)
 	   {
-		   System.out.println(array[x]);
+		   //System.out.println(array[x]);
+		   // printing array 
 	   }
 	   System.out.println(elements.size()); 
 	   System.out.println(h_set.size()); 

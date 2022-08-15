@@ -20,11 +20,7 @@ public class Exercise_8_sort {
 		Collections.sort(BasketBallPlayers);
 		
 		System.out.println(BasketBallPlayers);
-		
-		
-	
-		
-		
+			
 		
 	}
 
